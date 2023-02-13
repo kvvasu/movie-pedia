@@ -1,12 +1,14 @@
 //http://www.omdbapi.com/?apikey=[yourkey]&
 //Initial References
+
 let movieNameRef = document.getElementById("movie-name");
 let searchBtn = document.getElementById("search-btn");
 let result = document.getElementById("result");
 
 let getMovie = async () => {
   let movieName = movieNameRef.value;
-  let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+  let API_KEY = "f01db207";
+  let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${API_KEY}`;
 
   //If input field is empty
   if (movieName.length <= 0) {
